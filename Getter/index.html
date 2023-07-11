@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body> 
+    <div class="container"> 
+      <h2>Password Getter</h2>
+      <div class="form-group">
+          <label for="textinput" class="col-md-12 control-label"> Email </label>
+          <div class="col-md-12">
+            <input
+              type="email"
+              name="textinput"
+              id="email"
+              autocomplete="off"
+              placeholder="Enter your email address"
+              class="form-control input-md"
+            />
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="textinput" class="col-md-12 control-label"> Master Password </label>
+          <div class="col-md-12">
+            <input
+              type="password"
+              name="textinput"
+              id="pw"
+              autocomplete="off"
+              placeholder="Enter your master password"
+              class="form-control input-md"
+            />
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="textinput" class="col-md-12 control-label"> Application </label>
+          <div class="col-md-12">
+            <input
+              type="text"
+              name="textinput"
+              id="app"
+              autocomplete="off"
+              placeholder="Enter your application"
+              class="form-control input-md"
+            />
+          </div>
+      </div>
+      <div class="btn generate">      
+        <button id="btn1" onclick="getPW()">Get</button>
+        <script>
+          const getPW = async () => {
+            const formdata = new FormData();
+            const [app, pw, email] = ["app", "pw", "email"].map(
+              (x) => document.getElementById(x).value
+            );
+            formdata.append("application", app);
+            formdata.append("password", pw);
+            formdata.append("email", email);
+            const res = await fetch(
+              "http://127.0.0.1:80/password_manager/get.php",
+              {
+                body: formdata,
+                method: "post",
+              }
+            );
+            const data = await res.text();
+            alert(data);
+          };
+        </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

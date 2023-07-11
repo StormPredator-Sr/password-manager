@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("download.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+  }
+  h2{
+    padding-left: 5.5rem;
+    align-items: center;
+  }
+  button {
+    border: 0;
+    outline: 0;
+  }
+  
+  .container {
+    margin: 40px 0;
+    width: 400px;
+    height: 310px;
+    padding: 10px 25px;
+    background: #ededed;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.45), 0 4px 8px rgba(0, 0, 0, 0.35),
+      0 8px 12px rgba(0, 0, 0, 0.15);
+    font-family: "Montserrat";
+  }
+  input[type="email"] {
+    padding: 1rem;
+    height: 5vh;
+    width: 100%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    border: none;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+  }
+  input[type="email"]::-webkit-input-placeholder,
+  ::-moz-placeholder {
+    font-family: "Montserrat";
+  }
+  input[type="password"] {
+    height: 5vh;
+    width: 100%;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    border-radius: 5px;
+    padding: 1rem;
+    border: none;
+  }
+  input[type="password"]::-webkit-input-placeholder,
+  ::-moz-placeholder {
+    font-family: "Montserrat";
+  }
+  input[type="text"] {
+    padding: 1rem;
+    height: 5vh;
+    width: 100%;
+    margin: 0.5rem 0rem 1rem 0rem;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    border: none;
+  }
+  input[type="text"]::-webkit-input-placeholder,
+  ::-moz-placeholder {
+    font-family: "Montserrat";
+  }
+  #btn1{
+    height: 2rem;
+    width: 100%;
+    background-color:   #05182d;
+    background-image: linear-gradient(135deg, #05182d 0%, #171717 100%);
+    color: #ededed;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 150ms ease;
+  }

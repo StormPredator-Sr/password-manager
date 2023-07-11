@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-image: url("download.jpg");
+    background-size: cover;
+}
+.container{
+    background-color: transparent;
+}
+h1{
+    margin: 15px 0 25px;
+    text-align: center;
+    font-size: 30px;
+}
+input{
+    color:#171717 !important;
+}
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=text]:focus{
+    box-shadow: 0 0 5px #DA0037;
+    border: 1px solid #DA0037;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-horizontal {
+    width: 320px;
+    padding: 25px 38px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 15px rgba(248, 248, 248, 0.921);
+    color: whitesmoke;
+}
+.control-label {
+    text-align: left !important;
+    padding-bottom: 4px;
+}
+.progress {
+    height: 3px !important;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.show-pass{
+    position: absolute;
+    top:5%;
+    right: 8%;
+}
+.progress-bar-danger {
+    background-color: #e90f10;
+}
+.progress-bar-warning{
+    background-color: #ffad00;
+}
+.progress-bar-success{
+    background-color: #02b502;
+}
+.login-btn{
+    width: 180px !important;
+    background-image: linear-gradient(to right, #ff512f 0%, #dd2476 41%, #ff512f 90%) !important;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 auto 5px;
+    padding: 8px 0; 
+}
+.login-btn:hover{
+    background-image: linear-gradient(to left, #dd2476 0%, #ff512f 51%, #ff512f 100%) !important;
+    color: #fff !important;
+    font-size: 15px ;
+}
+.fa-eye{
+    color: #171717;
+    cursor: pointer;
+}
+.ex-account p a{
+    color: #DA0037;
+    text-decoration: underline;
+}
+.fa-circle{
+    font-size: 6px;  
+}
+.fa-check{
+    color: #02b502;
+}
